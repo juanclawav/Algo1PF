@@ -1,5 +1,13 @@
 #include <bits/stdc++.h> // Para importar todas librerias
-#define input freopen("ejemplo1.txt", "r", stdin)
+#define input freopen("in.txt", "r", stdin)
+#define input1 freopen("ejemplo1.txt", "r", stdin)
+#define input2 freopen("ejemplo2.txt", "r", stdin)
+#define input3 freopen("ejemplo3.txt", "r", stdin)
+#define input4 freopen("ejemplo4.txt", "r", stdin)
+#define input5 freopen("ejemplo5.txt", "r", stdin)
+#define input6 freopen("ejemplo6.txt", "r", stdin)
+
+#define output freopen("out.txt", "w", stdout)
 using namespace std;
 
 const int n = 9;
@@ -49,8 +57,54 @@ bool resolver(int tabla[n][n]) {
   }
   return false; 
 }
+void menu(){
+    int c;
+        cout<<"1 ejecutar Ejemplos =======" << endl;
+        cout<<"0 Salir del programa" << endl;
+        cin>>c;
+        if(c == 1) {
+             cout<<"Mostrar el ejemplo 1"<<endl;
+            cout<<"Mostrar el ejemplo 2"<<endl;
+            cout<<"Mostrar el ejemplo 3"<<endl;
+            cout<<"Mostrar el ejemplo 4"<<endl;
+            cout<<"Mostrar el ejemplo 5"<<endl;
+            cout<<"Mostrar el ejemplo 6"<<endl;
+            
+        cout<<"7. ejecuta tu propio caso de entrada (leer archivo instruccion.txt) =======" << endl;
+        }
+        else if(c==0){
+            cout<<"Saliendo"<<endl;
+        }
+    int op;
+    cin>>op;
+    switch(op) {
+                     case 1:
+                     input1;
+                    break;
+                      case 2:
+                     input2;
+                    break;
+                     case 3:
+                     input3;
+                    break;
+                     case 4:
+                     input4;
+                    break;
+                     case 5:
+                     input5;
+                    break;
+                     case 6:
+                     input6;
+                    break;
+                    case 7:
+                    input;
+                    break;
+                    default:
+                    break;
+                    }
+}
 int main() {
-    input;
+    menu();
   int tabla[n][n];
   for (int i = 0; i < n; i++) {
     for (int j = 0; j < n; j++) {
