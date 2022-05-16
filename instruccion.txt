@@ -1,0 +1,2 @@
+Para ingresar tu propia tabla de sudoku, solo es necesario ingresar 9 lineas de 9 numeros separados por espacios en el archivo in.txt, donde los ceros que ingreses representan 
+los espacios vacíos en la tabla. Una manera facil de hacerlo es usar un juego movil de sudoku y copiar la tabla generada por este juego, el programa te dará una solución correcta.

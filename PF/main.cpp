@@ -63,19 +63,15 @@ void menu(){
         cout<<"0 Salir del programa" << endl;
         cin>>c;
         if(c == 1) {
-             cout<<"Mostrar el ejemplo 1"<<endl;
-            cout<<"Mostrar el ejemplo 2"<<endl;
-            cout<<"Mostrar el ejemplo 3"<<endl;
-            cout<<"Mostrar el ejemplo 4"<<endl;
-            cout<<"Mostrar el ejemplo 5"<<endl;
-            cout<<"Mostrar el ejemplo 6"<<endl;
-            
-        cout<<"7. ejecuta tu propio caso de entrada (leer archivo instruccion.txt) =======" << endl;
-        }
-        else if(c==0){
-            cout<<"Saliendo"<<endl;
-        }
-    int op;
+             cout<<"1. Mostrar el ejemplo 1"<<endl;
+            cout<<"2. Mostrar el ejemplo 2"<<endl;
+            cout<<"3. Mostrar el ejemplo 3"<<endl;
+            cout<<"4. Mostrar el ejemplo 4"<<endl;
+            cout<<"5. Mostrar el ejemplo 5"<<endl;
+            cout<<"6. Mostrar el ejemplo 6"<<endl;    
+            cout<<"7. ejecuta tu propio caso de entrada (leer archivo instruccion.txt) =======" << endl;
+
+         int op;
     cin>>op;
     switch(op) {
                      case 1:
@@ -100,8 +96,14 @@ void menu(){
                     input;
                     break;
                     default:
+                    cout<<"Invalido"<<endl;
                     break;
                     }
+        }
+        else if(c==0){
+            cout<<"Saliendo"<<endl;
+            exit(0);
+        }
 }
 int main() {
     menu();
@@ -112,6 +114,13 @@ int main() {
     }
   }
   cout << endl;
+   cout << "Tabla a solucionar: " << endl;
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < n; j++){
+        cout << tabla[i][j] << " ";
+        }
+    cout << endl;
+    }
   if (resolver(tabla) == true) {
     cout << "Solucion: " << endl;
     for (int i = 0; i < n; i++) {
